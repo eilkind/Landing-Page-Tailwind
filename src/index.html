@@ -9,7 +9,7 @@
 </head>
 <body>
    <!-- Navbar -->
-   <nav class="relative container mx-auto p-6">
+   <nav class="relative container max-w-5xl mx-auto p-6">
     <!-- Flex Container -->
     <div class="flex items-center justify-between">
         <!-- Logo -->
@@ -27,12 +27,36 @@
         <!-- Button -->
         <a href="#" class="hidden p-3 px-6 pt-2 text-white bg-brightRed baseline rounded-full
             hover:bg-brightRedLight md:block">Get Started</a>
+
+        <!-- Hamburger Icon -->
+        <button
+            id="menu-btn"
+            class="block hamburger md:hidden focus:outline-none">
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+        </button> 
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="md:hidden">
+        <div
+            id="menu"
+            class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 
+                font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+            <a href="#">Pricing</a>
+            <a href="#">Product</a>
+            <a href="#">About Us</a>
+            <a href="#">Careers</a>
+            <a href="#">Community</a>
+        </div>
     </div>
    </nav>
+
     
    <!-- Hero Section -->
    <section id="hero">
-    <div class="container flex flex-col-reverse md:flex-row items-center px-6 mx-auto 
+    <div class=" container max-w-5xl flex flex-col-reverse md:flex-row items-center px-6 mx-auto 
         mt-10 space-y-0 md:space-y-0 ">
 
         <!-- Left Section -->
@@ -63,7 +87,7 @@
 
    <!-- Features Section -->
    <section id="features">
-    <div class="container flex flex-col px-6 mx-auto mt-10 space-y-12 md:space-y-0 md:flex-row mb-10">
+    <div class="container max-w-5xl flex flex-col px-6 mx-auto mt-10 space-y-12 md:space-y-0 md:flex-row mb-10">
         <!-- Left Side -->
         <div class="flex flex-col space-y-12 mb-10 md:w-1/2 self-center md:self-start ">
             <h2 class="max-w-md text-4xl font-bold text-center md:text-left">
@@ -77,7 +101,7 @@
         </div>
 
         <!-- Right Side -->
-        <div class="flex flex-col md:w-1/2 space-y-12">
+        <div class="flex flex-col space-y-12 max-w-xl md:w-1/2">
             <!-- 01 -->
             <div class="flex flex-col space-y-4">
 
@@ -130,7 +154,7 @@
 
    <!-- Testimonials Section -->
    <section id="testm">
-    <div class="container px-5 flex flex-col space-y-5 mx-auto mb-10">
+    <div class="container max-w-6xl px-5 flex flex-col space-y-5 mx-auto mb-10">
 
         <!-- Heading -->
         <div class="items-center mb-16">
@@ -183,6 +207,8 @@
             hover:bg-brightRedLight">Get Started</a>
     </div>
    </section>
+
+
    
    <!-- Simplify -->
    <section id="cta" class="bg-brightRed">
@@ -190,7 +216,7 @@
     <div class="container flex flex-col items-center justify-between py-24 md:py-12 px-12md:px-6 
             px-6 mx-auto md:text-left space-y-12 md:space-y-0 md:flex-row">
         
-        <h2 class="text-white font-bold text-5xl md:max-w-xl">
+        <h2 class="text-white text-center font-bold text-5xl md:max-w-xl md:text-left">
             Simplify how your team works today
         </h2>
 
@@ -281,5 +307,7 @@
 
     </div>
    </section>
+
+   <script src="/js/script.js"></script>
 </body>
 </html>
