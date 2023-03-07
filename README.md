@@ -6,8 +6,10 @@
 
 
 **On Ipad**
+
 ![image](https://user-images.githubusercontent.com/87380930/223420419-4ea2865b-6cc9-4f0a-bc22-e085d23e18a4.png)
 
 
 **On Mobile**
+
 ![image](https://user-images.githubusercontent.com/87380930/223420626-673f3beb-68d2-4291-b391-90e7d49d96a3.png)
